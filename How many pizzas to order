@@ -1,0 +1,40 @@
+// Provides a recommendation on the number of pizzas needed to feed a pizza party based on the number of guests in the group and how hungry each guest is.
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>How many pizzas to order</title>
+    </head>
+
+    <body>
+        <h1>Pizza calculation</h1>
+    </body>
+    
+<script>
+
+var peopleAmount = prompt('Hi there, I hope you are having a great week. Welcome to our family owned pizza shop. To reserve a table, please enter how many guests will be attending the pizza party tonight.');
+console.log(peopleAmount);
+
+alert('Great, thank you for confirming that there will be' + ' ' + peopleAmount + ' ' + 'guests attending. In order to make sure that there is the right amount of pizza for the party, please answer the following questions about how hungry the guests are. There are three options to choose from: extremely hungry, decently hungry, or slightly hungry.')
+
+var extremelyHungry = prompt ('Out of the' + ' ' + peopleAmount + ' ' + 'guests, please enter how many guests are extremely hungry.');
+console.log(extremelyHungry);
+
+var decentlyHungry = prompt ('Out of the' + ' ' + (peopleAmount - extremelyHungry) + ' ' + 'guests that are not extremely hungry, please enter how many guests are decently hungry.');
+console.log(decentlyHungry);
+
+var slightlyHungry = prompt ('Out of the' + ' ' + (peopleAmount - extremelyHungry - decentlyHungry) + ' ' + 'guests that are not extremely hungry or decently hungry, please confirm how many guests are slightly hungry.');
+console.log(slightlyHungry);
+
+var pizzaSlicesAmount = ((5 * extremelyHungry)+ (3 * decentlyHungry) + (2 * slightlyHungry));
+console.log(pizzaSlicesAmount);
+
+var pizzaSlicesToWholePizzaConversion = ((pizzaSlicesAmount)/8);
+console.log(pizzaSlicesToWholePizzaConversion);
+
+
+alert ('Based on the information provided to us about how hungry your guests are, we recommend that you buy' + ' ' + pizzaSlicesToWholePizzaConversion + ' ' + 'pizzas. We will get started on making these pizzas ASAP. We are confident that you will enjoy them!');
+
+</script>
+
