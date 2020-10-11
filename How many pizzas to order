@@ -13,7 +13,7 @@
     
 <script>
 
-var peopleAmount = prompt('Hi there, I hope you are having a great week. Welcome to our family owned pizza shop. To reserve a table, please enter how many guests will be attending the pizza party tonight.');
+var peopleAmount = prompt('Hi there, I hope you are having a great week. Welcome to our family owned pizza shop. We have been in business for 50 years and believe in paying our employees living wages and using fresh, organic, and locally sourced ingredients. To reserve a table, please enter how many guests will be attending the pizza party tonight.');
 console.log(peopleAmount);
 
 alert('Great, thank you for confirming that there will be' + ' ' + peopleAmount + ' ' + 'guests attending. In order to make sure that there is the right amount of pizza for the party, please answer the following questions about how hungry the guests are. There are three options to choose from: extremely hungry, decently hungry, or slightly hungry.')
