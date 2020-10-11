@@ -34,7 +34,7 @@ var pizzaSlicesToWholePizzaConversion = ((pizzaSlicesAmount)/8);
 console.log(pizzaSlicesToWholePizzaConversion);
 
 
-alert ('Based on the information provided to us about how hungry your guests are, we recommend that you buy' + ' ' + pizzaSlicesToWholePizzaConversion + ' ' + 'pizzas. We will get started on making these pizzas ASAP. We are confident that you will enjoy them!');
+alert ('Based on the information provided to us about how hungry your guests are, we recommend that you buy' + ' ' + Math.round(pizzaSlicesToWholePizzaConversion,1) + ' ' + 'pizzas. We will get started on making these pizzas ASAP. We are confident that you will enjoy them!');
 
 </script>
 
